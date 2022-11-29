@@ -1,0 +1,45 @@
+<app-barra-de-navegacao></app-barra-de-navegacao>
+<div class="container">
+    <h1>Editar colaborador</h1>
+    <form #formEdit="ngForm">
+        <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Titulo</mat-label>
+            <input type="text" matInput placeholder="titulo" name="titulo" [(ngModel)]="livro.titulo" required>
+        </mat-form-field>
+
+        <div class="double-width">
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Autor</mat-label>
+                <input type="text" matInput placeholder="autor" name="autor" [(ngModel)]="livro.autor" required>
+            </mat-form-field>
+    
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Categoria</mat-label>
+                <input type="date" matInput placeholder="categoria" name="categoria" [(ngModel)]="livro.categoria" required>
+            </mat-form-field>
+        </div>
+
+        <div class="double-width">
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Isbn</mat-label>
+                <input type="text" matInput placeholder="isbn" name="isbn" [(ngModel)]="livro.isbn" required>
+            </mat-form-field>
+    
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>status</mat-label>
+                <input type="text" matInput placeholder="status" name="status" [(ngModel)]="livro.status" required>
+            </mat-form-field>
+        </div>
+
+        <label for="foto">Selecione uma foto</label>
+        <input type="file" class="upload-photo" (change)="atualizarCapa($event)">
+        <mat-progress-bar mode="indeterminate" *ngIf="isLoadUpload"></mat-progress-bar>
+
+        <div class="double-width">
+            <button class="full-width btn-submit" mat-raised-button (click)="atualizarLivro(formEdit)">Editar</button>
+            <a class="full-width btn-close" mat-raised-button routerLink="/dashboard">Cancelar</a>
+        </div>
+    </form>
+</div>
+
+

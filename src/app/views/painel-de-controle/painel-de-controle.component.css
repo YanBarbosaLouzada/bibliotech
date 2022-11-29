@@ -1,0 +1,26 @@
+table{
+    width: 100%;
+
+}
+.table-container{
+    height: 70vh;
+    overflow: auto;
+}
+
+.avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+.btn-new{
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    background-color: #517fdc;
+}
+.parabotao{
+    position: absolute;
+    right: 30px ;
+    bottom: 30px;
+    background-color: #517fdc;
+}

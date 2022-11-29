@@ -1,0 +1,48 @@
+<app-barra-de-navegacao></app-barra-de-navegacao>
+<div class="container"><br><br><br><br><br><br>
+    <h1>Novo Emprestimo</h1>
+    <form [formGroup]="formEmprestimo">
+
+        <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Titulo do Livro</mat-label>
+            <input type="search" matInput placeholder="titulo" formControlName="titulo">
+        </mat-form-field>
+
+        <div class="double-width">
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Nome do Leitor</mat-label>
+                <input type="text" matInput placeholder="nomeLeitor" formControlName="nomeLeitor">
+            </mat-form-field>
+
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Data do Emprestimo</mat-label>
+                <input type="date" matInput placeholder="dataEmprestimo" formControlName="dataEmprestimo">
+            </mat-form-field>
+        </div>
+
+        <div class="double-width">
+
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Status do Emprestimo</mat-label>
+                <input type="search" matInput placeholder="statusEmprestimo" formControlName="statusEmprestimo">
+            </mat-form-field>
+
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Telefone</mat-label>
+                <input type="tel" matInput placeholder="telefone" formControlName="telefone">
+            </mat-form-field>
+
+        </div>
+        <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Email do Leitor</mat-label>
+            <input type="email" matInput placeholder="email" formControlName="email">
+        </mat-form-field>
+
+        <div class="double-width">
+            <button class="full-width btn-enviar" mat-raised-button (click)="addEmprestimo()">Fazer Emprestimo</button>
+            <button class="full-width btn-cancelar" mat-raised-button routerLink="/emprestimo">Cancelar</button>
+        </div>
+
+
+    </form>
+</div>  

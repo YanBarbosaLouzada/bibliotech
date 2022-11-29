@@ -1,0 +1,23 @@
+.home-container{
+    padding-top: 64px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(225, 225, 225);
+    background-image: url("https://i.pinimg.com/736x/34/6b/a8/346ba8c5a5d43c060e636185d461dc08.jpg");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+}
+
+.home-container img{
+    width: 100px;
+}
+
+.home-container h1{
+    width: 15%;
+    font-size: 5vh;
+    line-height: 7vh;
+    position: absolute;
+    left: 20%;
+    top: 30%;
+}

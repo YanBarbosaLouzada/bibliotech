@@ -1,0 +1,18 @@
+mat-toolbar{
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    position: fixed;
+    top:0; 
+ }
+ #logout{
+     display: flex;
+     align-items: center;
+ 
+ }
+ #logout i {
+     margin-left: 25px;
+ }
+ span{
+     margin-left: 30px ;
+ }

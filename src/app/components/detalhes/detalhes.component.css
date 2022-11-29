@@ -1,0 +1,21 @@
+.dg-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.dg-container img {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    margin: 0 auto;
+}
+
+.dg-container h3 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.dg-container span {
+    font-size: 17px;
+    line-height: 25px;
+}

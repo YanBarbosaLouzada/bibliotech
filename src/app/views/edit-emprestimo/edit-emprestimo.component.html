@@ -1,0 +1,41 @@
+<app-barra-de-navegacao></app-barra-de-navegacao>
+<div class="container">
+    <h1>Editar Emprestimo</h1>
+    <form #formEdit="ngForm">
+        <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Titulo</mat-label>
+            <input type="text" matInput placeholder="titulo" name="titulo" [(ngModel)]="emprestimo.tituloLivro" required>
+        </mat-form-field>
+
+        <div class="double-width">
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Status Do Emprestimo</mat-label>
+                <input type="text" matInput placeholder="statusEmprestimo" name="statusEmprestimo" [(ngModel)]="emprestimo.statusEmprestimo" required>
+            </mat-form-field>
+    
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Data de Emprestimo</mat-label>
+                <input type="date" matInput placeholder="dataEmprestimo" name="dataEmprestimo" [(ngModel)]="emprestimo.dataEmprestimo" required>
+            </mat-form-field>
+        </div>
+
+        <div class="double-width">
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>E-mail do Leitor</mat-label>
+                <input type="text" matInput placeholder="email" name="email" [(ngModel)]="emprestimo.email" required>
+            </mat-form-field>
+    
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Telefone do Leitor</mat-label>
+                <input type="text" matInput placeholder="telefone" name="telefone" [(ngModel)]="emprestimo.telefone" required>
+            </mat-form-field>
+        </div>
+
+        <div class="double-width">
+            <button class="full-width btn-submit" mat-raised-button (click)="atulizarEmprestimo(formEdit)">Editar</button>
+            <a class="full-width btn-close" mat-raised-button routerLink="/dashboard">Cancelar</a>
+        </div>
+    </form>
+</div>
+
+

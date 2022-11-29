@@ -1,0 +1,15 @@
+<app-barra-de-navegacao></app-barra-de-navegacao>
+<div id="login-container">
+    <div class="login-form mat-elevation-z8" tabindex="0">
+        <h1>Faça seu login</h1>
+        <button (click)="entraGoogle()">
+            <h2>Conectar Com Google</h2>
+        </button>
+        <form [formGroup]="formLogin">
+            <input type="email" placeholder="E-mail" formControlName="email">
+            <input type="password" placeholder="Senha" formControlName="senha">
+            <button type="submit" (click)="logarConta()">Cadastrar</button>
+        </form>
+        <span>Faça já o seu <a routerLink="/cadastro"> Cadastro!!! </a></span> 
+    </div>
+</div>

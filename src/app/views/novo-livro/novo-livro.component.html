@@ -1,0 +1,47 @@
+<app-barra-de-navegacao></app-barra-de-navegacao>
+<div class="container"><br><br><br><br><br><br> 
+    <h1>Novo Livro</h1>
+    <form [formGroup]="formLivro">
+
+        <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Titulo</mat-label>
+            <input type="text" matInput placeholder="titulo" formControlName="titulo">
+        </mat-form-field>
+
+        <div class="double-width">
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Autor</mat-label>
+                <input type="text" matInput placeholder="autor"formControlName="autor">
+            </mat-form-field>
+
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Categoria</mat-label>
+                <input type="text" matInput placeholder="categoria"formControlName="categoria">
+            </mat-form-field>
+        </div>
+        
+        <div class="double-width">
+
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Isbn</mat-label>
+                <input type="text" matInput placeholder="isbn"formControlName="isbn">
+            </mat-form-field>
+
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Status</mat-label>
+                <input type="text" matInput placeholder="status"formControlName="status">
+            </mat-form-field>
+        </div>
+       
+        <label for="foto">Selecione uma Capa para seu livro</label>
+        <input type="file" class="edit-foto" (change)="carregarCapa($event)">
+        <mat-progress-bar mode="indeterminate" *ngIf="isLoadUpload"></mat-progress-bar>
+
+        <div class="double-width">
+            <button class="full-width btn-enviar" mat-raised-button (click)="addLivro()">Cadastrar</button>
+            <button class="full-width btn-cancelar" mat-raised-button routerLink="/painel-de-controle" >Cancelar</button>
+        </div>
+        
+
+    </form>
+</div>
