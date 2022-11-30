@@ -18,13 +18,13 @@ export class EmprestimosComponent implements OnInit {
 
 
 
-  constructor(private emprestimo: EmprestimoService,
+  constructor(private emprestimoService: EmprestimoService,
 
     private dialog: MatDialog) { }
 
 
   iniciarTabela() {
-    this.emprestimo.listarEmprestimo().subscribe(emprestimo => {
+    this.emprestimoService.listarEmprestimo().subscribe(emprestimo => {
       this.dataSource = emprestimo;
     })
   }
@@ -34,7 +34,7 @@ export class EmprestimosComponent implements OnInit {
   }
 
     deletarEmprestimo(id: string) {
-    this.emprestimo.deletarEmprestimo(id).subscribe(resposta => {
+    this.emprestimoService.deletarEmprestimo(id).subscribe(resposta => {
       alert("Apagado")
       this.iniciarTabela()
     })

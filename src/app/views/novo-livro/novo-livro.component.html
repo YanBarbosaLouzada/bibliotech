@@ -20,18 +20,15 @@
             </mat-form-field>
         </div>
         
-        <div class="double-width">
+        
 
             <mat-form-field class="full-width" appearance="outline">
                 <mat-label>Isbn</mat-label>
                 <input type="text" matInput placeholder="isbn"formControlName="isbn">
             </mat-form-field>
 
-            <mat-form-field class="full-width" appearance="outline">
-                <mat-label>Status</mat-label>
-                <input type="text" matInput placeholder="status"formControlName="status">
-            </mat-form-field>
-        </div>
+    
+        
        
         <label for="foto">Selecione uma Capa para seu livro</label>
         <input type="file" class="edit-foto" (change)="carregarCapa($event)">

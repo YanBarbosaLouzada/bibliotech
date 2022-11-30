@@ -7,6 +7,7 @@
     align-items:center ; 
     justify-content: space-between; 
 }
+
 .double-width .full-width{
     width: 48%;
 }
@@ -30,3 +31,15 @@
 .edit-foto::-webkit-file-upload-button{
     display:none;
 }
+.bb{
+    width: 48%;
+}
+.cc{
+    width: 100%
+}
+
+.jj{
+    width: 48%;
+}
+
+

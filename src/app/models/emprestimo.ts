@@ -1,8 +1,10 @@
+import { Livro } from "./livro"
+
 export interface Emprestimo {
     id?:string
     nomeLeitor:string
-    tituloLivro: string
-    dataEmprestimo: Date
+    livro: Livro
+    dataEmprestimo: string
     statusEmprestimo: string
     email:string
     telefone:string         

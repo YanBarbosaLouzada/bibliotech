@@ -8,6 +8,6 @@ import { AvatarPipe } from 'src/app/service/pipes.service';
   styleUrls: ['./detalhes.component.css']
 })
 export class DetalhesComponent {
-  constructor(@Inject(MAT_DIALOG_DATA)public livro: Livro,){}
+  constructor(@Inject(MAT_DIALOG_DATA)public livro: Livro){}
 
 }

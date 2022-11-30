@@ -8,16 +8,16 @@
 
              <ng-container class="parabotao"matColumnDef="capa">
                 <th mat-header-cell *matHeaderCellDef> Capa do Livro </th>
-                <td mat-cell *matCellDef="let livro">
-                    <button mat-icon-button  (click)="abrirDetalhes(livro)">
-                        <img class="avatar" src="{{livro.capa}}" alt="capa">
+                <td mat-cell *matCellDef="let emprestimo">
+                    <button mat-icon-button (click)="abrirDetalhes(emprestimo.livro)">
+                        <img class="avatar" src="{{emprestimo.livro.capa}}" alt="capa">
                     </button>
                 </td>
             </ng-container> 
  
             <ng-container matColumnDef="tituloLivro">
                 <th mat-header-cell *matHeaderCellDef> Titulo do Livro</th>
-                <td mat-cell *matCellDef="let emprestimo"> {{emprestimo.tituloLivro}}</td>
+                <td mat-cell *matCellDef="let emprestimo"> {{emprestimo.livro.titulo}}</td>
             </ng-container>
 
             <ng-container matColumnDef="nomeLeitor">

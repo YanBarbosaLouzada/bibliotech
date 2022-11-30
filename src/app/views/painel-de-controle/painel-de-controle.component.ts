@@ -11,7 +11,7 @@ import { BibliotechService } from 'src/app/service/bibliotech.service';
 })
 export class PainelDeControleComponent implements OnInit {
 
-  displayedColumns = ['capa', 'autor', 'categoria', 'isbn','titulo', 'status', 'editar','deletar'];
+  displayedColumns = ['capa', 'autor', 'categoria', 'isbn','titulo','editar','deletar'];
   dataSource: Livro[] = [];
 
 

@@ -29,7 +29,7 @@ export class NovoLivroCompoenent implements OnInit {
       isbn: ["", [Validators.required]],
       autor: ["", [Validators.required]],
       categoria: ["", [Validators.required]],
-      status: ["", [Validators.required]],
+      
  
     })
 
